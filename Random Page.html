@@ -1,216 +1,217 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Uncommon Videos</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'Fredoka', sans-serif;
-      background-image: url('Space.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: white;
-      text-shadow: 2px 2px 4px black;
-      scroll-behavior: smooth;
-    }
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Uncommon Videos</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Fredoka', sans-serif;
+        background-image: url('Space.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+        text-shadow: 2px 2px 4px black;
+        scroll-behavior: smooth;
+      }
 
-    .section {
-      height: 100vh;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-      box-sizing: border-box;
-    }
+      .section {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+      }
 
-    /* New content wrapper for nice text styling */
-    .content {
-      max-width: 700px;
-      background-color: rgba(0, 0, 0, 0.45);
-      padding: 20px 30px;
-      border-radius: 15px;
-      margin: 0 auto;
-      text-align: center;
-    }
+      /* New content wrapper for nice text styling */
+      .content {
+        max-width: 700px;
+        background-color: rgba(0, 0, 0, 0.45);
+        padding: 20px 30px;
+        border-radius: 15px;
+        margin: 0 auto;
+        text-align: center;
+      }
 
-    h1 {
-      margin-top: 0;
-    }
+      h1 {
+        margin-top: 0;
+      }
 
-    .top-menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      background-color: #111;
-      padding: 10px 0;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-      z-index: 1000;
-    }
+      .top-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #111;
+        padding: 10px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+      }
 
-    .top-menu a {
-      color: white;
-      text-decoration: none;
-      text-align: center;
-      font-size: 14px;
-      transition: 0.3s;
-    }
+      .top-menu a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        transition: 0.3s;
+      }
 
-    .top-menu a:hover {
-      color: #00ffff;
-    }
+      .top-menu a:hover {
+        color: #00ffff;
+      }
 
-    .top-menu img {
-      width: 30px;
-      height: 30px;
-      display: block;
-      margin: 0 auto 5px;
-      transition: transform 0.3s ease, filter 0.3s ease;
-    }
+      .top-menu img {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: 0 auto 5px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+      }
 
-    .top-menu a:hover img {
-      filter: brightness(1.5);
-      transform: scale(1.1);
-    }
+      .top-menu a:hover img {
+        filter: brightness(1.5);
+        transform: scale(1.1);
+      }
 
-    /* Add space so content doesn't hide behind top menu */
-    .spacer {
-      height: 60px;
-    }
-  </style>
-</head>
-<body>
+      /* Add space so content doesn't hide behind top menu */
+      .spacer {
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
 
-  <!-- Top Navigation Menu -->
-  <div class="top-menu">
-    <a href="https://mrniftyfire.github.io/My-Youtube-Website/My%20Youtube%20Website.html">
-      <img src="PFP New (Small).png" alt="PFP (Small)">Home
-    </a>
-    <a href="https://mrniftyfire.github.io/Lego-Stop-Motion/Lego%20Stop-Motion.html">
-      <img src="LEGA (Small).png" alt="LEGO">LEGO
-    </a>
-    <a href="https://mrniftyfire.github.io/Roblox-Site/Roblox.html">
-      <img src="Roblox (Small).png" alt="Roblox">Roblox
-    </a>
-    <a href="https://mrniftyfire.github.io/GD-Site/GD%20Site.html">
-      <img src="GD (Small).png" alt="GD">GD
-    </a>
-    <a href="https://mrniftyfire.github.io/Duolingo-Site/Duolingo.html">
-      <img src="Duolingo (Small).png" alt="Duolingo">Duolingo
-    </a>
-    <a href="https://mrniftyfire.github.io/Blooket-Site/Blooket%20Site.html">
-      <img src="Blooket (Small).png" alt="Blooket">Blooket
-    </a>
-    <a href="https://mrniftyfire.github.io/Minecraft-Site/Minecraft%20Site.html">
-      <img src="Minecraft (Small).png" alt="Minecraft">Minecraft
-    </a>
-    <a href="https://mrniftyfire.github.io/Chess-Site/Chess%20site.html">
-      <img src="Chess (Small).png" alt="Chess">Chess
-    </a>
-    <a href="https://mrniftyfire.github.io/Among-Us-Site/Among%20Us.html">
-      <img src="Amoung Us. (Small).png" alt="Among Us">Among Us
-    </a>
-    <a href="https://mrniftyfire.github.io/Prodigy-Site/Prodigy.html">
-      <img src="Prodigy (Small).png" alt="Prodigy">Prodigy
-    </a>
-    <a href="https://mrniftyfire.github.io/Uncommon-Videos/Random%20Page.html">
-      <img src="UV Icon.png" alt="UV">UV
-    </a>
-    <a href="https://mrniftyfire.github.io/Pocket-Champs-Site/Pocket%20Champs.html">
-      <img src="Pocket_Champs (Small).png" alt="Pocket Champs">PC
-    </a>
-  </div>
+    <!-- Top Navigation Menu -->
+    <div class="top-menu">
+      <a href="https://mrniftyfire.github.io/My-Youtube-Website/My%20Youtube%20Website.html">
+        <img src="PFP New (Small).png" alt="PFP (Small)">Home
+      </a>
+      <a href="https://mrniftyfire.github.io/Lego-Stop-Motion/Lego%20Stop-Motion.html">
+        <img src="LEGA (Small).png" alt="LEGO">LEGO
+      </a>
+      <a href="https://mrniftyfire.github.io/Roblox-Site/Roblox.html">
+        <img src="Roblox (Small).png" alt="Roblox">Roblox
+      </a>
+      <a href="https://mrniftyfire.github.io/GD-Site/GD%20Site.html">
+        <img src="GD (Small).png" alt="GD">GD
+      </a>
+      <a href="https://mrniftyfire.github.io/Duolingo-Site/Duolingo.html">
+        <img src="Duolingo (Small).png" alt="Duolingo">Duolingo
+      </a>
+      <a href="https://mrniftyfire.github.io/Blooket-Site/Blooket%20Site.html">
+        <img src="Blooket (Small).png" alt="Blooket">Blooket
+      </a>
+      <a href="https://mrniftyfire.github.io/Minecraft-Site/Minecraft%20Site.html">
+        <img src="Minecraft (Small).png" alt="Minecraft">Minecraft
+      </a>
+      <a href="https://mrniftyfire.github.io/Chess-Site/Chess%20site.html">
+        <img src="Chess (Small).png" alt="Chess">Chess
+      </a>
+      <a href="https://mrniftyfire.github.io/Among-Us-Site/Among%20Us.html">
+        <img src="Amoung Us. (Small).png" alt="Among Us">Among Us
+      </a>
+      <a href="https://mrniftyfire.github.io/Prodigy-Site/Prodigy.html">
+        <img src="Prodigy (Small).png" alt="Prodigy">Prodigy
+      </a>
+      <a href="https://mrniftyfire.github.io/Uncommon-Videos/Random%20Page.html">
+        <img src="UV Icon.png" alt="UV">UV
+      </a>
+      <a href="https://mrniftyfire.github.io/Pocket-Champs-Site/Pocket%20Champs.html">
+        <img src="Pocket_Champs (Small).png" alt="Pocket Champs">PC
+      </a>
+    </div>
 
-  <!-- Spacer to avoid content under the top menu -->
-  <div class="spacer"></div>
+    <!-- Spacer to avoid content under the top menu -->
+    <div class="spacer"></div>
 
-  <!-- Section 1 -->
-<section class="section" style="background-image: url('Question\ Mark\ Background.png');">
-  <div class="content">
-  <h1>UV — Uncommon Videos</h1>
-  <p>🌟 Welcome to UV — where Uncommon Videos rule the screen.<br><br>
-
-  From chaotic memes to heartfelt messages, this is your one-stop zone for everything unexpected, hilarious, and real. 💥<br><br>
-
-  ✝️ Dive into powerful religious content that explores the truth, love, and hope found in Jesus — no judgment, just faith.<br>
-  🎬 Explore movie reviews packed with honest thoughts, hidden gems, and wild opinions you didn’t know you needed.<br>
-  😂 Watch unpredictable joke videos, sketch comedy, and Discord chaos — always wild, never meant to offend.<br><br>
-
-  Here at UV, every clip is a curveball — sometimes deep, sometimes funny, always original.<br><br>
-
-  👉 Whether you’re laughing, thinking, or just vibing — you're in the right place.<br>
-  Hit follow and experience content like you’ve never seen before.</p>
-  <h1>Scroll Down To See More Info!</h1>
-
-  </div>
-</section>
-
-
-  <section class="section" style="background-image: url('Clue Background.png');">
+    <!-- Section 1 -->
+  <section class="section" style="background-image: url('Question\ Mark\ Background.png');">
     <div class="content">
-      <h1>Random Videos!</h1>
-      <p>💥 Welcome to the Random Chaos!<br><br>
-      If you crave unfiltered jokes, spicy drama breakdowns, and completely unexpected moments—this is your new favorite corner of the internet!<br><br>
-      😂 I drop the wildest joke videos, from perfectly timed one-liners to cringe-worthy “oops” moments you can’t look away from.<br>
-      🗣️ Dive into dramatic rants and hot takes on whatever’s trending—no topic is off-limits.<br>
-      🎲 One clip might be a mockumentary-style sketch, the next a spontaneous rant about your weirdest internet discovery.<br><br>
-      Join the madness, share your own hot takes, and brace yourself for the most unpredictable entertainment online.</p>
-      <h1>My Videos!</h1>
-      
+    <h1>UV — Uncommon Videos</h1>
+    <p>🌟 Welcome to UV — where Uncommon Videos rule the screen.<br><br>
+
+    From chaotic memes to heartfelt messages, this is your one-stop zone for everything unexpected, hilarious, and real. 💥<br><br>
+
+    ✝️ Dive into powerful religious content that explores the truth, love, and hope found in Jesus — no judgment, just faith.<br>
+    🎬 Explore movie reviews packed with honest thoughts, hidden gems, and wild opinions you didn’t know you needed.<br>
+    😂 Watch unpredictable joke videos, sketch comedy, and Discord chaos — always wild, never meant to offend.<br><br>
+
+    Here at UV, every clip is a curveball — sometimes deep, sometimes funny, always original.<br><br>
+
+    👉 Whether you’re laughing, thinking, or just vibing — you're in the right place.<br>
+    Hit follow and experience content like you’ve never seen before.</p>
+    <h1>Scroll Down To See More Info!</h1>
+
     </div>
   </section>
 
-  <!-- Section 2 -->
-  <section class="section" style="background-image: url('Hevean.png');">
-    <div class="content">
-      <h1>Religious Videos!</h1>
-      <p>✝️ Welcome to the Chaos of Jesus!<br><br>
-      📖 Dive deep into powerful Bible stories, meaningful lessons, and the life-changing wisdom that only He can give.<br>
-      🙏 From His miracles and parables to His endless love and sacrifice, every moment here is centered on discovering who Jesus truly is.<br>
-      💬 Whether you’re seeking encouragement, looking for answers, or simply curious to learn more about Him — this is a space where faith comes alive.<br><br>
-      Join the journey, grow closer to Christ, and experience what it means to follow Him in a real and personal way.</p>
-      <h1>My Videos</h1>
-    </div>
-  </section>
 
-  <!-- Section 3 -->
-  <section class="section" style="background-image: url('Movie Review Background.png');">
-    <div class="content">
-      <h1>Movie Reviews</h1>
-      <p>🎬 Step into a world where cinema comes alive — where every frame, every line, and every twist is broken down, analyzed, and celebrated.<br><br>
-      🎥 Discover thought-provoking themes, hidden Easter eggs, and powerful performances that stay with you long after the credits roll.<br><br>
-      🔍 Scene breakdowns | ⭐ Honest ratings | 🎞️ No spoilers (unless warned)<br><br>
-      🍿 Reviews that entertain, insights that inspire.<br>
-      Smash that follow and join the review crew — let’s watch smarter, together. 🎬</p>
-      <h1>My Videos!</h1>
-    </div>
-  </section>
-    <section class="section" style="background-image: url('Discord\ Background.png');">
-    <div class="content">
-      <h1>Discord</h1>
-      <p>If you love unfiltered humor, wild conversations, and moments that should’ve never been recorded — you’re in the right place!
-<br>
-😂 I post the most hilarious Discord clips, from ridiculous voice chat moments to text chat disasters you won’t believe actually happened.
-🎙 Whether it’s perfectly timed jokes, arguments over nothing, or complete server chaos — it’s all here.
-🎮 Sometimes it’s during games, sometimes it's just 2AM energy — either way, it’s always funny.
-<br>
+    <section class="section" style="background-image: url('Clue Background.png');">
+      <div class="content">
+        <h1>Random Videos!</h1>
+        <p>💥 Welcome to the Random Chaos!<br><br>
+        If you crave unfiltered jokes, spicy drama breakdowns, and completely unexpected moments—this is your new favorite corner of the internet!<br><br>
+        😂 I drop the wildest joke videos, from perfectly timed one-liners to cringe-worthy “oops” moments you can’t look away from.<br>
+        🗣️ Dive into dramatic rants and hot takes on whatever’s trending—no topic is off-limits.<br>
+        🎲 One clip might be a mockumentary-style sketch, the next a spontaneous rant about your weirdest internet discovery.<br><br>
+        Join the madness, share your own hot takes, and brace yourself for the most unpredictable entertainment online.</p>
+        <h1>My Videos!</h1>
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/xWV5mDygB50?si=95ciVP0Su8o4WJ_l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+        
+      </div>
+    </section>
 
-<br>Join the madness, enjoy the laughs, and relive the most unforgettable Discord moments.
-Hit that follow and prepare to hear things you can’t un-hear!</p>
-      <h1>My Videos!</h1>
-    </div>
-  </section>
+    <!-- Section 2 -->
+    <section class="section" style="background-image: url('Hevean.png');">
+      <div class="content">
+        <h1>Religious Videos!</h1>
+        <p>✝️ Welcome to the Chaos of Jesus!<br><br>
+        📖 Dive deep into powerful Bible stories, meaningful lessons, and the life-changing wisdom that only He can give.<br>
+        🙏 From His miracles and parables to His endless love and sacrifice, every moment here is centered on discovering who Jesus truly is.<br>
+        💬 Whether you’re seeking encouragement, looking for answers, or simply curious to learn more about Him — this is a space where faith comes alive.<br><br>
+        Join the journey, grow closer to Christ, and experience what it means to follow Him in a real and personal way.</p>
+        <h1>My Videos</h1>
+      </div>
+    </section>
 
-</body>
-</html>
+    <!-- Section 3 -->
+    <section class="section" style="background-image: url('Movie Review Background.png');">
+      <div class="content">
+        <h1>Movie Reviews</h1>
+        <p>🎬 Step into a world where cinema comes alive — where every frame, every line, and every twist is broken down, analyzed, and celebrated.<br><br>
+        🎥 Discover thought-provoking themes, hidden Easter eggs, and powerful performances that stay with you long after the credits roll.<br><br>
+        🔍 Scene breakdowns | ⭐ Honest ratings | 🎞️ No spoilers (unless warned)<br><br>
+        🍿 Reviews that entertain, insights that inspire.<br>
+        Smash that follow and join the review crew — let’s watch smarter, together. 🎬</p>
+        <h1>My Videos!</h1>
+      </div>
+    </section>
+      <section class="section" style="background-image: url('Discord\ Background.png');">
+      <div class="content">
+        <h1>Discord</h1>
+        <p>If you love unfiltered humor, wild conversations, and moments that should’ve never been recorded — you’re in the right place!
+  <br>
+  😂 I post the most hilarious Discord clips, from ridiculous voice chat moments to text chat disasters you won’t believe actually happened.
+  🎙 Whether it’s perfectly timed jokes, arguments over nothing, or complete server chaos — it’s all here.
+  🎮 Sometimes it’s during games, sometimes it's just 2AM energy — either way, it’s always funny.
+  <br>
+
+  <br>Join the madness, enjoy the laughs, and relive the most unforgettable Discord moments.
+  Hit that follow and prepare to hear things you can’t un-hear!</p>
+        <h1>My Videos!</h1>
+      </div>
+    </section>
+
+  </body>
+  </html>
